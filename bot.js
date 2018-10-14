@@ -36,8 +36,8 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const comando = args.shift().toLowerCase();
 
-  //comando ódio
-  if(comando === "´ódio") {
+  //comando odio
+  if(comando === "´odio") {
     return message.reply("Arghh!Tenho ódio de muitas coisas! Tenho ódio de quando minhas vitimas fojem de mim! :rage: ");
   }
   //comando idade
@@ -57,8 +57,8 @@ client.on("message", async message => {
     return message.reply("https://media1.tenor.com/images/2580506c719dd661ab9c5eb0b73ec320/tenor.gif?itemid=8287273 Aproveite o horror! :smiling_imp: ");
   }
   //comando dev
-  if(comando === "dev") {
-    return message.reply("Meu desenvolvedor é: @Zax#3581");
+  if(comando === "desenvolvedores") {
+    return message.reply("Meu desenvolvedor é: ZaxCreations! E meu configurador é: yLucasPvP!");
   }
   // comando ping
   if(comando === "ping") {
