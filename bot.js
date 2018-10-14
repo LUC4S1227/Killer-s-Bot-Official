@@ -125,16 +125,8 @@ client.on("message", async message => {
       .catch(error => message.reply(`Desculpe ${message.author} não consegui banir o membro devido o : ${error}`));
     message.reply(`${member.user.tag} foi banido por ${message.author.tag} Motivo: ${reason}`);
   }
-  // comando esfaquear
-  if(comando === "esfaquear") {
-    let member = message.mentions.members.first();
-    if(!member)
-      return message.reply("Fale o nome de quem irei matar e esfaquear! 👹");
-
-    let reason = args.slice(1).join(' ');
-    if(!reason) reason = "Esfaqueou";
-    message.reply(`${member.author.tag} Esfaqueou ${message.user.tag}: https://78.media.tumblr.com/tumblr_m02seq01Ov1qbvovho1_500.gif`);
-  }
-}); 
+  // comando jpsy
+  if(comando === "jpsy") {
+      return message.reply("Só curti o Estilo mabacro! :smiling_imp: https://78.media.tumblr.com/10f6b50c6c1506a3e48ed5d90dc1f2e0/tumblr_mkpr5aMw0I1s958qao1_1280.gif");
 
 client.login(config.token);
