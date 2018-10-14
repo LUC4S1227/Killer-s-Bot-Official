@@ -128,5 +128,8 @@ client.on("message", async message => {
   // comando jpsy
   if(comando === "jpsy") {
       return message.reply("Só curti o Estilo mabacro! :smiling_imp: https://78.media.tumblr.com/10f6b50c6c1506a3e48ed5d90dc1f2e0/tumblr_mkpr5aMw0I1s958qao1_1280.gif");
+  }
+
+ });
 
 client.login(config.token);
